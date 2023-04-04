@@ -35,6 +35,9 @@
          <div class="contentleft">
            <h1 class="contenth" >S<br/>E<br/>R<br/>V<br/>I<br/>C<br/>E<br/>S</h1>
          </div>
+          <div class="contentlefth">
+           <h1 class="contenth" >SERVICES</h1>
+         </div>
          <div class="contentmid" >
            <ul>
             <li>Oil & Filter Change </li>
@@ -103,11 +106,22 @@
             <h1>BOOK BETWEEN</h1>
         </div>
 
-        <div>
+       <div style="display: flex;width: 100%;justify-content: center;align-items: center;gap: 30px;" >
+         <div class="elipsediv" >
             <div class="elipse"></div>
-            <div class="elipse"></div>
-
+            <div style="margin-left: -30px;" class="elipse"></div>
+            <p style="margin-left: -90px;" >APRIL 15</p>
         </div>
+        <div style="margin-right: -20px;" >
+            <img src="./images/Line 1.png" alt="">
+        </div>
+        <div class="elipsediv" >
+            <div class="elipse"></div>
+            <div style="margin-left: -30px;" class="elipse"></div>
+            <p style="margin-left: -90px" >MAY 15</p>
+        </div>
+       </div>
+
 
         <div class="servicediv" >
             <p>Service must be completed before <b style="color:#0059FF" >30 June 2023.</b></p>
@@ -116,7 +130,7 @@
         <div class="savediv" >
             <p>Save <b style="color:#0059FF" >10%</b> on complete package.</p>
         </div>
-
+         <br/>
         <div class="infodiv" >
             <h1>MORE INFORMATION</h1>
         </div>
@@ -124,11 +138,11 @@
 
         <div class="contactdiv" >
             <div class="mail">
-                <img src="./images//mailicon.png" alt="">
+                <img src="./images//mailicon.png" alt=""> &nbsp; &nbsp;
                 <p style="display: inline;" >www. mvsottawa.com</p>
             </div>
             <div class="phone" >
-                <img src="./images/phoneicon.png" alt="">
+                <img src="./images/phoneicon.png" alt=""> &nbsp; &nbsp;
                 <p style="display: inline;" >613-854-4154</p>
             </div>
         </div>
@@ -161,6 +175,9 @@
     .contentleft{
         width:25%;display: flex;justify-content: center;text-align: center;
     }
+    .contentlefth{
+        display: none;
+    }
     .contentmid{
         width:33%;
     }
@@ -177,7 +194,7 @@
         display: flex;width: 90%;justify-content: space-around;margin: auto;
     }
     .tuneuprightdiv{
-        border: 2px solid black;width:80%;border-radius: 6px;text-align: center;margin: auto;
+        border: 2px solid black;width:250px;border-radius: 6px;text-align: center;margin: auto;
     }
     .tuneupright{
         text-align: center;
@@ -189,10 +206,10 @@
         font-size: 25px;
     }
     .tuneupleft{
-        text-align: center;width: 40%;
+        text-align: center;
     }
     .tuneupleftdiv{
-        border: 2px solid black;border-radius: 6px;text-align: center;width: 80%;margin: auto;
+        border: 2px solid black;border-radius: 6px;text-align: center;width: 250px;margin: auto;
     }
     .tuneupleftdiv p{
         font-size: 25px;
@@ -216,7 +233,7 @@
         text-align: center;margin-top: 20px;
     }
     .contactdiv{
-        display: flex;width: 40%;margin: auto;justify-content: space-between;height: 150px;
+        display: flex;width: 40%;margin: auto;justify-content: space-between;margin-bottom: 30px;
     }
     .mail p{
         font-size: 25px;
@@ -229,6 +246,93 @@
     }
     .elipse{
         border-radius: 100%;background-color: #FC8C1E;height: 68px;width: 68px;
+    }
+    .elipsediv{
+        display: flex;
+    }
+
+
+
+    @media screen and (max-width:780px) {
+        .body1{
+            flex-direction: column;
+        }
+        .image{
+            width: 100%;margin-top: 5px;
+        }
+        .header{
+            width: 95%;
+        }
+        .content{
+            flex-direction: column;
+        }
+        .contentmid{
+            width: 75%;margin: auto;
+        }
+        .contentright{
+            width: 75%;margin: auto;
+        }
+        .tuneupdiv{
+            flex-direction: column;width: 95%;
+        }
+        .contactdiv{
+            flex-direction: column;
+        }
+        .contentleft{
+            display: none;
+        }
+        .contentlefth{
+            display: block;width: 75%;margin: auto;
+        }
+        
+        /* .header h1{
+            font-size: 20px;
+        } */
+        
+    }
+
+    @media screen and (max-width:995px) {
+        .tuneupdiv{
+            flex-direction: column;
+        }
+        .contactdiv{
+            width: 75%;
+        }
+        .header{
+            width: 70%;
+        }
+        .header{
+            width: 80%;
+        }
+    }
+
+    @media only screen and (max-width:995px) and (min-width:780px){
+        .contentmid{
+            width: 40%;
+        }
+        .contentright{
+            width: 50%;
+        }
+        .contentleft{
+            width: 10%;
+        }
+    }
+    @media screen and (max-width:760px) and (min-width:630px) {
+        .header h1{
+           font-size: 25px;
+        }
+        .header h2{
+            font-size: 20px;
+        }
+    }
+
+      @media screen and (max-width:630px) {
+        .header h1{
+           font-size: 15px;
+        }
+        .header h2{
+            font-size: 10px;
+        }
     }
 </style>
 </html>
