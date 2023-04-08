@@ -12,7 +12,7 @@
         <p><b>MVS OTTAWA MOBILE SMALL ENGINE REPAIRS INC.</b></p>
       </div>
 
-      <div class="header">
+      <!-- <div class="header">
         <div class="leftheader">
           <h1>Lawn Mowers/Riding Tractors<br />Tune-up Special</h1>
           <h2>Be Ready For Spring</h2>
@@ -20,8 +20,18 @@
         <div style="position: relative" class="rightheader">
           <img class="star" src="./images/starimage.png" alt="" />
         </div>
+      </div> -->
+
+
+      <div class="divintro" >
+        <h1>Lawn Mowers/Riding Tractors<br />Tune-up Special</h1>
+        <img style="margin-top: -3%;" src="./images/starimage.png" alt="" />
       </div>
 
+
+      <div class="springdiv" >
+        <h2>Be Ready For Spring</h2>
+      </div>  
       <div class="body1">
         <img class="image" src="./images/temp1.png" alt="" />
         <img class="image" src="./images/temp2.png" alt="" />
@@ -35,7 +45,7 @@
           </h3>
         </div>
         <div class="contentlefth">
-          <h1 class="contenth">SERVICES</h1>
+          <p class="contenth">SERVICES</p>
         </div>
         <div class="contentmid">
           <ul>
@@ -178,8 +188,23 @@
     body {
       font-family: "Roboto", sans-serif;
     }
+    .divintro h1{
+        font-size: 22px;font-weight: 900;
+    }
+    .springdiv h2{
+      font-size: 18px;
+    }
+    .springdiv{
+      width: 90%;margin: auto;
+    }
+    .divintro img{
+      height: 154px;width: 154px;
+    }
     .maindiv {
       width: 100%;
+    }
+    .divintro{
+      display: flex;height: 100px;justify-content: space-around;align-items: center;width: 80%;margin: auto;
     }
     .introdiv p {
       display: flex;
@@ -238,6 +263,9 @@
       width: fit-content;
       background-color: #f7f7f7;
     }
+    .contentlefth p{
+      font-size: 22px;font-weight: 900;
+    }
     .contenth {
       font-size: 24px;
       font-weight: 900;
@@ -282,8 +310,8 @@
       width: 50%;
       margin: auto;
       border-radius: 6px;
-      padding-bottom: 16px;
-      padding-top: 16px;
+      padding-bottom: 30px;
+      padding-top: 30px;
     }
     .tuneupleft h2 {
       font-size: 22px;
@@ -426,13 +454,13 @@
         margin: auto;
       }
     }
-    @media screen and (min-width: 1000px) and (max-width: 1120px) {
+    @media screen and (min-width: 900px) and (max-width: 1120px) {
       .maindiv {
         width: 80%;
         margin: auto;
       }
     }
-    @media screen and (min-width: 1130px) and (max-width: 1440px) {
+    @media screen and (min-width: 1121px) and (max-width: 1440px) {
       .maindiv {
         width: 60%;
         margin: auto;
@@ -452,6 +480,12 @@
         gap: 10px;
         width: 90%;
         margin: auto;
+      }
+      .springdiv{
+        text-align: center;
+      }
+      .springdiv h2{
+        margin-left: 0px;
       }
       .image {
         width: 50%;
@@ -491,7 +525,7 @@
         display: block;
         width: fit-content;
         margin: auto;
-        width: 45%;
+        width: 90%;
       }
 
       .lawnmowers {
@@ -501,8 +535,9 @@
         margin-top: -42px;
       }
       .tuneupright{
-        width: 52%;
+        width: 90%;
       }
+      
     }
 
     @media screen and (max-width: 995px) {
@@ -562,6 +597,19 @@
       .header h1 {
         font-size: 20px;
       }
+      .springdiv h2{
+        font-size: 10px;
+      }
+
+      .divintro{
+        width: 80%;margin: auto;
+      }
+      .divintro h1{
+         font-size: 15px;
+      }
+      .divintro img{
+        height: 110px;width: 110px;
+      }
       .header {
         width: 95%;
         justify-content: space-between;
@@ -600,9 +648,9 @@
       .contactdiv {
         width: 100%;
       }
-      .introdiv p {
+      /* .introdiv p {
         font-size: 12px;
-      }
+      } */
       .introdiv {
         text-align: center;
       }
@@ -628,25 +676,34 @@
       .contentright ul li {
         line-height: 30px;
       }
+      .tuneupright{
+        width: 90%;
+      }
     }
     @media screen and (max-width: 370px) {
       .header {
         flex-wrap: wrap;
       }
+      .divintro{
+        width: 90%;
+      } 
       .star {
         margin-left: 180px;
         margin-top: -160px;
       }
-      .contentlefth {
-        width: fit-content;
-      }
       .tuneupright {
         width: 90%;
+      }
+      .mail{
+        width: 95%;
       }
     }
     @media screen and (max-width: 500px) {
       .tuneupright {
-        width: 75%;
+        width: 90%;
+      }
+      .introdiv p{
+        font-size: 18px;
       }
     }
   </style>
