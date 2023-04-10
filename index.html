@@ -7,21 +7,54 @@
     <title>Document</title>
   </head>
   <body>
+    <!-- <div class="maindiv">
+      <div class="introdiv" style="width: 70%;position: relative;left: 8%;margin-top: 40px;">
+        <h2 >MVS OTTAWA MOBILE SMALL ENGINE REPAIRS INC.</h2>
+      </div> -->
+
     <div class="maindiv">
-      <div class="introdiv">
-        <p><b>MVS OTTAWA MOBILE SMALL ENGINE REPAIRS INC.</b></p>
+      <div class="introdiv" style="text-align: center">
+        <h2>MVS OTTAWA MOBILE SMALL ENGINE REPAIRS INC.</h2>
       </div>
 
-      <div class="header">
-        <div class="leftheader">
+      <div
+        class="stardiv"
+        style="
+          display: flex;
+          width: 100%;
+          justify-content: space-around;
+          gap: 4px;
+          height: 200px;
+          align-items: center;
+        "
+      >
+        <h1 class="stardivheading">
+          Lawn Mowers/Riding Tractors<br />Tune-up Special
+        </h1>
+        <img class="stardivimage" src="./images/starimage.png" alt="" />
+      </div>
+
+      <!-- <div class="header" style="position: relative;width: 90%;justify-content: space-between;" >
+          <div class="leftheader"  >
+            <h1>Lawn Mowers/Riding Tractors<br />Tune-up Special</h1>
+          </div>
+          <div  class="rightheader"" >
+            <img class="star" src="./images/starimage.png" alt="" />
+          </div>
+        </div> -->
+
+      <!-- <div class="header" style="position: relative;width: 90%;justify-content: space-between;" >
+        <div class="leftheader" style="margin-left: 30px;">
           <h1>Lawn Mowers/Riding Tractors<br />Tune-up Special</h1>
           <h2>Be Ready For Spring</h2>
         </div>
-        <div style="position: relative" class="rightheader">
+        <div style="position: absolute;right:-2%;top: -75%;" class="rightheader">
           <img class="star" src="./images/starimage.png" alt="" />
         </div>
+      </div> -->
+      <div class="leftheader">
+        <h2 style="font-size: 14px; font-weight: 800">Be Ready For Spring</h2>
       </div>
-
       <div class="body1">
         <img class="image" src="./images/temp1.png" alt="" />
         <img class="image" src="./images/temp2.png" alt="" />
@@ -114,15 +147,33 @@
         <div class="elipsediv">
           <div class="elipse"></div>
           <div style="margin-left: -30px" class="elipse"></div>
-          <p style="margin-left: -98px; margin-top: 20px;font-size: 20px;font-weight: 800;"><b>APRIL 15</b></p>
+          <p
+            style="
+              margin-left: -98px;
+              margin-top: 20px;
+              font-size: 20px;
+              font-weight: 800;
+            "
+          >
+            <b>APRIL 15</b>
+          </p>
         </div>
-        <div style="margin-right: -25px; margin-left: -15px; ">
+        <div style="margin-right: -25px; margin-left: -15px">
           <img src="./images/Line 1.png" alt="" />
         </div>
         <div class="elipsediv">
           <div class="elipse"></div>
           <div style="margin-left: -30px" class="elipse"></div>
-          <p style="margin-left: -92px; margin-top: 20px;font-size: 20px;font-weight: 800;"><b>MAY 15</b></p>
+          <p
+            style="
+              margin-left: -92px;
+              margin-top: 20px;
+              font-size: 20px;
+              font-weight: 800;
+            "
+          >
+            <b>MAY 15</b>
+          </p>
         </div>
       </div>
 
@@ -181,23 +232,24 @@
     .maindiv {
       width: 100%;
     }
-    .introdiv p {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      font-weight: 800;
-      font-size: 24px;
-    }
     .header {
       display: flex;
       width: 90%;
       justify-content: space-around;
       margin: auto;
     }
+    .stardivheading {
+      width: 50%;
+      font-size: 24px;
+      font-weight: 900;
+    }
+    .leftheader h2 {
+      margin-left: 40px;
+    }
     .leftheader h1 {
       font-weight: 900;
       font-size: 24px;
-      line-height: 27.6px;
+      line-height: 34.6px;
     }
     .header h2 {
       font-size: 14px;
@@ -368,7 +420,6 @@
     }
     .infodiv {
       text-align: center;
-      
     }
     .contactdiv {
       display: flex;
@@ -453,6 +504,20 @@
         width: 90%;
         margin: auto;
       }
+      .leftheader h2 {
+        text-align: center;
+        margin-left: 0px;
+      }
+      /* .stardiv h1{
+        font-size: 10px;
+      } */
+      .stardivh {
+        font-size: 18px;
+      }
+      .stardiv img {
+        height: 130px;
+        width: 130px;
+      }
       .image {
         width: 50%;
         margin: auto;
@@ -500,9 +565,12 @@
       .contentright {
         margin-top: -42px;
       }
-      .tuneupright{
+      .tuneupright {
         width: 52%;
       }
+      /* .introdiv{
+        width: 70%;
+      } */
     }
 
     @media screen and (max-width: 995px) {
@@ -542,6 +610,9 @@
       .content {
         width: 90%;
       }
+      .star {
+        margin-top: -10%;
+      }
       /* .contentleft {
         width: 10%;
       } */
@@ -553,22 +624,32 @@
       .header h2 {
         font-size: 20px;
       }
-      .star {
+      /* .star {
         height: 100px;
-      }
+      } */
     }
 
     @media screen and (max-width: 630px) {
+      .stardiv h1 {
+        font-size: 18px;
+      }
       .header h1 {
         font-size: 20px;
       }
       .header {
-        width: 95%;
+        width: 70%;
         justify-content: space-between;
       }
+      /* .star{
+        margin-top: -15%;
+      } */
       .star {
         height: 100px;
         width: 100px;
+        margin-top: 20%;
+      }
+      .introdiv h2 {
+        font-size: 20px;
       }
       .header h2 {
         font-size: 10px;
@@ -582,9 +663,9 @@
       .contentmid {
         margin: auto;
       }
-      .star {
+      /* .star {
         height: 90px;
-      }
+      } */
       .lawnmowers {
         flex-direction: column;
         width: 90%;
@@ -600,12 +681,12 @@
       .contactdiv {
         width: 100%;
       }
-      .introdiv p {
+      /* .introdiv p {
         font-size: 12px;
-      }
-      .introdiv {
+      } */
+      /* .introdiv {
         text-align: center;
-      }
+      } */
       .tuneuprightdiv {
         margin: auto;
       }
@@ -630,12 +711,15 @@
       }
     }
     @media screen and (max-width: 370px) {
-      .header {
+      /* .header {
         flex-wrap: wrap;
-      }
-      .star {
+      } */
+      /* .star {
         margin-left: 180px;
         margin-top: -160px;
+      } */
+      .stardiv h1 {
+        font-size: 13px;
       }
       .contentlefth {
         width: fit-content;
@@ -643,10 +727,32 @@
       .tuneupright {
         width: 90%;
       }
+      /* .star{
+        top: 10%;
+      } */
+      .star {
+        height: 80px;
+        width: 80px;
+        margin-top: 80%;
+      }
+      .introdiv h2 {
+        font-size: 20px;
+      }
     }
     @media screen and (max-width: 500px) {
       .tuneupright {
         width: 75%;
+      }
+      /* .starh{
+        font-size: 10px;
+      } */
+
+      /* .leftheader{
+        width: 80%;
+      } */
+      .leftheader h1 {
+        font-size: 15px;
+        line-height: 20px;
       }
     }
   </style>
